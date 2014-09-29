@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:adsmogo="http://www.adsmogo.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haixu.jdxy.WebActivity" >
+
+    <!--
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-6081432241581514/3892631381"
+        android:visibility="visible" />
+    -->
+
+
+    <!--
+    <com.adsmogo.adview.AdsMogoLayout
+        android:id="@+id/adsMogoView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        adsmogo:appid="93535c6092f543e8a257ee435a69da06" />
+    -->
+
+    <com.kyview.AdViewLayout
+        android:id="@+id/adview_ayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </com.kyview.AdViewLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adview_ayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_loading" />
+
+</RelativeLayout>

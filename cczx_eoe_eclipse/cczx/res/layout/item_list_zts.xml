@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/news_list_height"
+    android:orientation="vertical"
+    android:paddingLeft="14.0dip"
+    android:paddingRight="14dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="时尚宽松大方康师傅康师傅上课"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="2"
+        android:text="上课上课都没考试的考试模上课上课都没考试的考试模上课上课都没考试的考试模上课上课都没考试的考试模"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="14.0dip"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/list_line" />
+</LinearLayout>
